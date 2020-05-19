@@ -49,7 +49,7 @@ jobs:
       run: |
         source /opt/ros/eloquent/setup.bash
         cd ~/ros2_dotnet_ws
-        colcon test --event-handlers console_cohesion+ --return-code-on-test-failure --packages-select rcldotnet
+        colcon test --merge-install --event-handlers console_cohesion+ --return-code-on-test-failure --packages-select rcldotnet
     
     - name: Upload the install file
       uses: actions/upload-artifact@v2
