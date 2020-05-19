@@ -50,3 +50,9 @@ jobs:
         source /opt/ros/eloquent/setup.bash
         cd ~/ros2_dotnet_ws
         colcon test --event-handlers console_cohesion+ --return-code-on-test-failure --packages-select rcldotnet
+    
+    - name: Upload math result for job 1
+      uses: actions/upload-artifact@v2
+      with:
+        name: homework
+        path: ~/ros2_dotnet_ws/install
