@@ -51,8 +51,8 @@ jobs:
         cd ~/ros2_dotnet_ws
         colcon test --event-handlers console_cohesion+ --return-code-on-test-failure --packages-select rcldotnet
     
-    - name: Upload math result for job 1
+    - name: Upload the install file
       uses: actions/upload-artifact@v2
       with:
-        name: homework
+        name: ros2_dotnet
         path: ~/ros2_dotnet_ws/install
