@@ -43,7 +43,7 @@ jobs:
       run: |
         source /opt/ros/eloquent/setup.bash
         cd ~/ros2_dotnet_ws
-        colcon build --event-handlers console_cohesion+ console_package_list+
+        colcon build --merge-install --event-handlers console_cohesion+ console_package_list+
 
     - name: Run tests
       run: |
